@@ -1,0 +1,61 @@
+/* ここに記載する */
+
+/* 以下は修正しない */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+header {
+  background-color: #1aaedb;
+  border-bottom: #ead963 6px solid;
+}
+.container {
+  padding:16px;
+  padding-left:120px;
+}
+header h1,
+header h2 {
+  margin:0;
+  color: #fff;
+  line-height: 1;
+}
+header h1 {
+  padding:30px 0 5px 0;
+  font-size:24px;
+  border-bottom:1px dotted #fff;
+  font-weight:500;
+}
+header h2 {
+  padding:6px 0 0 0;
+  font-size:14px;
+  font-weight:400;
+}
+.kin { 
+
+  border-top:20px solid #ffbf00;
+  border-bottom:20px solid #ffbf00;
+  border-left:120px solid #ffbf00;
+  border-right:120px solid #ffbf00;
+  }
+  
+  .off {
+  border-top:20px solid #1992d4;
+  border-bottom:20px solid #1992d4;
+  border-left:120px solid #1992d4;
+  border-right:120px solid #1992d4;
+  }
+  
+  .gar {
+  border-top:20px solid #003399;
+  border-bottom:20px solid #003399;
+  border-left: 120px solid #003399;
+  border-right:120px solid #003399;
+  }
+  
+  .mail {
+  border-top:20px solid #df4356;
+  border-bottom:20px solid #df4356;
+  border-left:120px solid #df4356;
+  border-right:120px solid #df4356;
+  }
