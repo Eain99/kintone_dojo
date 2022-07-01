@@ -1,0 +1,11 @@
+{
+  "cSpell.words": [
+    "Garoon"
+  ],
+  "liveServer.settings.https": {
+    "enable": true,
+    "cert": "/Users/eainlay-99/Downloads/localhost+2.pem",
+    "key": "/Users/eainlay-99/Downloads/localhost+2-key.pem",
+    "passphrase": ""
+  }
+}
