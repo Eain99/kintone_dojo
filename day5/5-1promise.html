@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dojo課題</title>
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+header {
+  background-color: #1aaedb;
+  border-bottom: #ead963 6px solid;
+}
+.container {
+  padding: 16px;
+  padding-left: 120px;
+}
+header h1,
+header h2 {
+  margin: 0;
+  color: #fff;
+  line-height: 1;
+}
+header h1 {
+  padding: 30px 0 5px 0;
+  font-size: 24px;
+  border-bottom: 1px dotted #fff;
+  font-weight: 500;
+}
+header h2 {
+  padding: 6px 0 0 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Kintone dojo</h1>
+    <h2>JavaScript課題①</h2>
+  </div>
+</header>
+<main class="container">
+ 
+</main>
+<script>
+ // we can declare that promise is object (pending/resolve/reject)
+  const promise = new Promise((resolve,reject) =>{//promise=variable,resolve=parameter
+    console.log('時間のかかる処理');
+   // resolve('データ'); //resolve=function
+   reject();
+  })
+  .then((val) => {
+    console.log('次にやる処理');
+    console.log(val);
+  })
+  .catch(() => {
+    console.log('失敗')
+  }); 
+</script>
+</body>
+</html>
