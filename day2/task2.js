@@ -19,17 +19,16 @@ file.forEach((fileId) => {
 
   innerLoop.forEach((fileProperty) => { // loops through files
     // console.log(fileId + '-' + fileProperty);
+
+    // Output the file permission settings to the 全てのフォルダとアクセス権を表示 table
     document.getElementById(fileId + '-' + fileProperty).textContent = fileManage[fileId][fileProperty];
 
-    // find the files with the view auth 'Everyone'
-    if (fileManage.fileId.fileProperty.viewAuth === "Everyone") {
-      console.log(fileManage.fileId.fileProperty.folderName);
+    // Determine which files have 'Everyone' as their view permission (viewAuth)
+    if (fileManage[fileId].viewAuth === "Everyone") {
+      console.log(fileManage[fileId].folderName);
     }
-    // display the foldername where viewAuth is 'Everyone'
 
-    // if ( === 'Everyone') {
-    // }
-
+    // Output the foldername where viewAuth is 'Everyone' as a list
   })
 
 });
