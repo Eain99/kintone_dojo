@@ -19,7 +19,7 @@ file.forEach((fileId) => {
   const innerLoop = Object.keys(fileManage[fileId]);
 
   innerLoop.forEach((fileProperty) => { // loops through files
-    console.log(fileId+'-'+fileProperty);
+    console.log(fileId + '-' + fileProperty);
     document.getElementById(fileId + '-' + fileProperty).textContent = fileManage[fileId][fileProperty];
 
     // find the files with the view auth 'Everyone'
