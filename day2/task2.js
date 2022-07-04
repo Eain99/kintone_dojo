@@ -23,14 +23,12 @@ file.forEach((fileId) => {
     document.getElementById(fileId + '-' + fileProperty).textContent = fileManage[fileId][fileProperty];
 
     // find the files with the view auth 'Everyone'
-    if (fileManage.fileId.fileProperty.viewAuth === "Everyone") {
-      console.log(fileManage.fileId.fileProperty.folderName);
+    if (fileManage[fileId][fileProperty] === "Everyone") {
+      console.log(fileManage[fileId].folderName);
+      //document.getElementById(fileProperty).textContent = fileManage[fileId][fileProperty].folderName;
+     
     }
-    // display the foldername where viewAuth is 'Everyone'
-
-    // if ( === 'Everyone') {
-    // }
-
+    
   })
 
 });
