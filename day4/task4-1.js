@@ -1,35 +1,58 @@
 'use strict';
-// Monthly cost is 3900 yen
-// if we check secure option and desk増設, it will be 5150
 
+const mainPrice = 3900;
+const price = document.getElementById('price');
 
-// amount = new Array();
-// amount[0]= 250;
-// amount[1]= 1000;
+document.getElementsByClassName('chk')[0].onclick = () => {
 
-// function calculation(){
-// goukei=3900;
+const secureOption = document.getElementsByClassName('chk')[0].checked;
+const diskExpansion= document.getElementsByClassName('chk')[1].checked;
 
-// for(i=0;i<=1;i++){
-// if(document.chk.elements[i].checked == true){
-//   goukei = goukei + amount[i];
-// }
-//   }
-//   document.chk.total.value=goukei;
-// }
+if(secureOption && diskExpansion) {
+mainPrice = 6150;
+price.innerText = mainPrice;
+}else if(secureOption && !diskExpansion){
+mainPrice = 5150;
+price.innerText = mainPrice;
+}else if(!secureOption && diskExpansion){
+  mainPrice= 4900;
+  price.innerText = mainPrice;
+}else if (!secureOption && !diskExpansion){
+  mainPrice = 3900;
+  price.innerText = mainPrice;
+}
 
+document.getElementsByClassName('chk')[1].onclick= () => {
 
-window.addEventListener('DOMContentLoaded',function(){
-  const amount=document.getElementsByClassName('chk');
-  const price=document.getElementById('price');
-  chk.addEventListener('change',checkboxStatus,false);
+  const secureOption1 = document.getElementsByClassName('chk')[0].checked;
+  const diskExpansion1 = document.getElementsByClassName('chk')[1].checked;
 
-
-  function checkboxStatus(){
-    if(this.checked){
-      price.textContent=this.value;
-    }else{
-      sampleOutput.textContent="";
-    }
+  if(secureOption1 && diskExpansion1 === true) {
+    mainPrice =6150;
+    price.innerText = mainPrice;
+  } else if (secureOption1 && !diskExpansion1){
+    mainPrice= 5150;
+    price.innerText = mainPrice;
+  }else if(!secureOption1 && diskExpansion1){
+    mainPrice= 4900;
+    price.innerText = mainPrice;
+  }else if (!secureOption1 && !diskExpansion1){
+    mainPrice= 3900;
+    price.innerText = mainPrice;
   }
-})
+}
+}
+
+//  let mainPrice = new Array();
+// mainPrice[0] = 250;
+// mainPrice[1] = 1000;
+
+// function keisan(){
+//   final = 3900 ;
+//   for(i=3900;i<=1;i++){
+//     if(document.myForm.elements[i].checked == true){
+//       final=final+mainPrice[i];
+//     }
+//   }
+//  document.myForm.total.value=final;
+// }
