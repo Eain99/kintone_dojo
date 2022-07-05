@@ -1,6 +1,6 @@
 'use strict';
 
-let mainPrice = 3900;
+let standardPrice = 3900;
 const price = document.getElementById('price');
 
 // secureOptionにチェックを入れた時
@@ -10,17 +10,17 @@ const secureOption = document.getElementsByClassName('chk')[0].checked;
 const diskExpansion= document.getElementsByClassName('chk')[1].checked;
 
 if(secureOption && diskExpansion) {
-  mainPrice = 6150;
-  price.innerText = mainPrice;
+standardPrice = 6150;
+  price.innerText = standardPrice;
 }else if(secureOption && !diskExpansion){
-  mainPrice = 5150;
-  price.innerText = mainPrice;
+standardPrice = 5150;
+  price.innerText = standardPrice;
 }else if(!secureOption && diskExpansion){
-  mainPrice = 4900;
-  price.innerText = mainPrice;
+standardPrice = 4900;
+  price.innerText = standardPrice;
 }else if (!secureOption && !diskExpansion){
-  mainPrice = 3900;
-  price.innerText = mainPrice;
+standardPrice = 3900;
+  price.innerText = standardPrice;
 }
 
 //diskExpansionにチェックを入れたとき
@@ -30,20 +30,20 @@ document.getElementsByClassName('chk')[1].onclick= () => {
   const diskExpansion1 = document.getElementsByClassName('chk')[1].checked;
 
   if(secureOption1 && diskExpansion1) {
-    mainPrice =6150;
-    price.innerText = mainPrice;
+  standardPrice =6150;
+    price.innerText = standardPrice;
   } else if (secureOption1 && !diskExpansion1){
-    mainPrice= 5150;
-    price.innerText = mainPrice;
+  standardPrice= 5150;
+    price.innerText = standardPrice;
   }else if(!secureOption1 && diskExpansion1){
-    mainPrice= 4900;
-    price.innerText = mainPrice;
+  standardPrice= 4900;
+    price.innerText = standardPrice;
   }else if (!secureOption1 && !diskExpansion1){
-    mainPrice= 3900;
-    price.innerText = mainPrice;
+  standardPrice= 3900;
+    price.innerText = standardPrice;
   }
-}
-}
+} // end of disExpansion process
+}// end of secureOption process
 
 // const standardPrice = 3900;
 // const secureOption = 1250;
