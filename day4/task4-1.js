@@ -2,6 +2,8 @@
 
 let standardPrice = 3900;
 const price = document.getElementById('price');
+// const secureOption = document.getElementsByClassName('chk')[0].checked;
+// const diskExpansion= document.getElementsByClassName('chk')[1].checked;
 
 // secureOptionにチェックを入れた時
 document.getElementsByClassName('chk')[0].onclick = () => {
@@ -9,7 +11,8 @@ document.getElementsByClassName('chk')[0].onclick = () => {
 const secureOption = document.getElementsByClassName('chk')[0].checked;
 const diskExpansion= document.getElementsByClassName('chk')[1].checked;
 
-if(secureOption && diskExpansion) {
+console.log(secureOption);
+if(secureOption.checked && diskExpansion) {
 standardPrice = 6150;
   price.innerText = standardPrice;
 }else if(secureOption && !diskExpansion){
