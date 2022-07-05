@@ -1,6 +1,32 @@
-/* ここに記載する */
+.kin { 
 
-/* 以下は修正しない */
+  border-top:20px solid #ffbf00;
+  border-bottom:20px solid #ffbf00;
+  border-left:120px solid #ffbf00;
+  border-right:120px solid #ffbf00;
+  }
+  
+  .off {
+  border-top:20px solid #1992d4;
+  border-bottom:20px solid #1992d4;
+  border-left:120px solid #1992d4;
+  border-right:120px solid #1992d4;
+  }
+  
+  .gar {
+  border-top:20px solid #003399;
+  border-bottom:20px solid #003399;
+  border-left: 120px solid #003399;
+  border-right:120px solid #003399;
+  }
+  
+  .mail {
+  border-top:20px solid #df4356;
+  border-bottom:20px solid #df4356;
+  border-left:120px solid #df4356;
+  border-right:120px solid #df4356;
+  }
+  
 html,
 body {
   height: 100%;
@@ -31,31 +57,10 @@ header h2 {
   font-size:14px;
   font-weight:400;
 }
-.kin { 
 
-  border-top:20px solid #ffbf00;
-  border-bottom:20px solid #ffbf00;
-  border-left:120px solid #ffbf00;
-  border-right:120px solid #ffbf00;
-  }
   
-  .off {
-  border-top:20px solid #1992d4;
-  border-bottom:20px solid #1992d4;
-  border-left:120px solid #1992d4;
-  border-right:120px solid #1992d4;
+  img {
+    width: 80%;
+    height:50% ;
   }
-  
-  .gar {
-  border-top:20px solid #003399;
-  border-bottom:20px solid #003399;
-  border-left: 120px solid #003399;
-  border-right:120px solid #003399;
-  }
-  
-  .mail {
-  border-top:20px solid #df4356;
-  border-bottom:20px solid #df4356;
-  border-left:120px solid #df4356;
-  border-right:120px solid #df4356;
-  }
+
