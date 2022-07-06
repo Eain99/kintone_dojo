@@ -67,7 +67,32 @@ header h2 {
   <button id="btn">計算</button>
 </main>
 <script>
-const checkbox = document.getElementsByClassName('chk')
+const checkbox = document.getElementsByClassName('chk');
+const select   = document.getElementsByClassName('slct');
+const price    = document.getElementById('price');
+
+document.getElementById('btn').onclick = ()=> {
+  const calculation1 = document.getElementsByClassName('chk')[0].checked;
+  const calculation2 = document.getElementsByClassName('chk')[1].checked;
+
+  const standardPrice =3900;
+  const secureOptionSelect= Number(select[0].value);
+  const diskExpansionSelect=Number(select[1].value);
+  const secureOption = Number(checkbox[0].value)*secureOptionSelect;
+  const diskExpansion= Number(checkbox[1].value)*diskExpansionSelect;
+
+  if(calculation1 && calculation2) {
+    price.innerText = standardPrice + secureOption + diskExpansion;
+  } else if (calculation1 && !calculation2 ) {
+    price.innerText = standardPrice + secureOption;
+  } else if (!calculation1 && calculation2) {
+    price.innerText = standardPrice + diskExpansion
+  } else if ( !calculation1 && !calculation2){
+    price.innerText =standardPrice;
+  }
+ 
+}
+
 
 </script>
 </body>
