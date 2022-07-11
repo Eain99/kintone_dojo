@@ -1,6 +1,5 @@
 'use strict';
 
-let standardPrice = 3900;
 const price = document.getElementById('price');
 // const secureOption = document.getElementsByClassName('chk')[0].checked;
 // const diskExpansion= document.getElementsByClassName('chk')[1].checked;
