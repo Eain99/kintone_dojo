@@ -13,12 +13,12 @@ kintone.events.on('app.record.create.show', (event) => {
              '公明正大'
            ];
 
-           action5.forEach((title) => {
+           action5.forEach((topic) => {
              table.value.push({
                value :{
-                 Action5: {type:'DROP_DOWN',value:title},
+                 Action5: {type:'DROP_DOWN',value:topic},
                  状況:{type:'CHECK_BOX',value:['未振り返り']},
-                 課題:{type:'MULTI_LINE_TEXT',value:''}
+                 課題:{type:'MULTI_LINE_TEXT',value:undefined}
                }
              });
            });
