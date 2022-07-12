@@ -7,8 +7,8 @@ console.log(event);
 
 //日付を出す
 const date = event.record.日付.value;
-// const today= ;
-return dateFns.format
+// const today= newDate();
+//return dateFns.
 console.log(date);
 
 //製品を出す
