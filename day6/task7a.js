@@ -11,6 +11,8 @@
   // Add create and edit events on the "サイボウズ製品" process
   kintone.events.on(['app.record.create.change.サイボウズ製品', 'app.record.edit.change.サイボウズ製品'], (event) => {
     const productType = event.record.サイボウズ製品.value;
+    const dateID = 'YYYYMMDD';
+    const numberID = `I am God!`;
 
     // use switch to get the values and display the values on the 重複禁止項目_文字列 field
     switch (productType) {
