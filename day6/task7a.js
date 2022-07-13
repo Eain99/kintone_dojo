@@ -18,19 +18,19 @@
     switch (productType) {
       case 'kintone':
         console.log(productArray[0]);
-        event.record.重複禁止項目_文字列.value = '${YYYYMMDD}-${productArray[0]}-${number}';
+        event.record.重複禁止項目_文字列.value = `${dateID}-${productArray[0]}-${numberID}`;
         break;
       case 'Garoon':
         console.log(productArray[1]);
-        event.record.重複禁止項目_文字列.value = '${YYYYMMDD}-${productArray[1]}-${number}';
+        event.record.重複禁止項目_文字列.value = `${dateID}-${productArray[1]}-${numberID}`;
         break;
       case 'サイボウズ Office':
         console.log(productArray[2]);
-        event.record.重複禁止項目_文字列.value = '${YYYYMMDD}-${productArray[2]}-${number}';
+        event.record.重複禁止項目_文字列.value = `${dateID}-${productArray[2]}-${numberID}`;
         break;
       case 'Mailwise':
         console.log(productArray[3]);
-        event.record.重複禁止項目_文字列.value = '${YYYYMMDD}-${productArray[3]}-${number}';
+        event.record.重複禁止項目_文字列.value = `${dateID}-${productArray[3]}-${numberID}`;
         break;
     }
     return event;
