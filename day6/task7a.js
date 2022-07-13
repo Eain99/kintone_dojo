@@ -6,27 +6,29 @@
 
 
   });
+
+  const productArray = ['KN', 'GR', 'OF', 'MW'];
   // Add create and edit events on the "サイボウズ製品" process
   kintone.events.on(['app.record.create.change.サイボウズ製品', 'app.record.edit.change.サイボウズ製品'], (event) => {
-    product = event.record.サイボウズ製品.value;
+    const productType = event.record.サイボウズ製品.value;
 
-    // use switch to get the values and display the values on the 重複禁止項目＿文字列 field
-    switch (product) {
+    // use switch to get the values and display the values on the 重複禁止項目_文字列 field
+    switch (productType) {
       case 'kintone':
-        product = 'KN';
-        event.record.重複禁止項目＿文字列.value = '${YYYYMMDD}-${product}-${number}';
+        console.log(productArray[0]);
+        event.record.重複禁止項目_文字列.value = '${YYYYMMDD}-${productArray[0]}-${number}';
         break;
       case 'Garoon':
-        product = 'GR';
-        event.record.重複禁止項目＿文字列.value = '${YYYYMMDD}-${product}-${number}';
+        console.log(productArray[1]);
+        event.record.重複禁止項目_文字列.value = '${YYYYMMDD}-${productArray[1]}-${number}';
         break;
-      case 'サイボウズOffice':
-        product = 'OF';
-        event.record.重複禁止項目＿文字列.value = '${YYYYMMDD}-${product}-${number}';
+      case 'サイボウズ Office':
+        console.log(productArray[2]);
+        event.record.重複禁止項目_文字列.value = '${YYYYMMDD}-${productArray[2]}-${number}';
         break;
       case 'Mailwise':
-        product = 'MW';
-        event.record.重複禁止項目＿文字列.value = '${YYYYMMDD}-${product}-${number}';
+        console.log(productArray[3]);
+        event.record.重複禁止項目_文字列.value = '${YYYYMMDD}-${productArray[3]}-${number}';
         break;
     }
     return event;
