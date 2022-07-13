@@ -2,7 +2,7 @@
   'use strict';
   // Add create and edit events on the "日付" process
   kintone.events.on(['app.record.create.change.日付', 'app.record.edit.change.日付'], (event) => {
-    date = event.record.日付.value;
+    const dateInput = event.record.日付.value;
 
 
   });
