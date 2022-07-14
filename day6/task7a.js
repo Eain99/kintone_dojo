@@ -49,23 +49,10 @@
       case 'Mailwise':
         event.record.重複禁止項目_文字列.value = `${dateId} - ${productType[3]} - ${numberManage}`;
         break;
-
-        // const duplicate = event.record.重複禁止項目＿文字列.value;
-        console.log(`duplicate`);
-        console.log(duplicate);
     }
     // event.record.重複禁止項目＿文字列.disabled =true; // prohibit the duplicate
     // event.record.重複禁止項目＿文字列.value = `${dateId} - ${productType} - ${numberManage}`;
 
     return event;
   });
-
-  // kintone.events.on(['app.record.create.change.重複禁止項目＿文字列','app.record.edit.change.重複禁止項目＿文字列'],(event)=>{
-  // console.l`og(event`);
-  // console.log(event);
-  // event.record.重複禁止項目＿文字列.disabled =true; // prohibit the duplicate
-  // event.record.重複禁止項目＿文字列.value = `${dateId} - ${productType} - ${numberManage}`;
-
-  // });
-
 })();
