@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const kEvent = ['app.record.create.change.日付', 'app.record.edit.change.日付', 'app.record.create.change.サイボウズ製品', 'app.record.edit.change.サイボウズ製品', 'app.record.create.change.管理番号', 'app.record.edit.change.管理番号', 'app.record.create.change.重複禁止項目＿文字列', 'app.record.edit.change.重複禁止項目＿文字列'];
+  const kEvent = ['app.record.create.change.日付', 'app.record.edit.change.日付', 'app.record.create.change.サイボウズ製品', 'app.record.edit.change.サイボウズ製品', 'app.record.create.change.管理番号', 'app.record.edit.change.管理番号'];
 
   kintone.events.on(kEvent, (event) => {
     console.log(`event`);
