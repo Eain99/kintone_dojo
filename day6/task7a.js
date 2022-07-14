@@ -7,8 +7,6 @@
     console.log(`event`);
     console.log(event);
 
-    //  event.record.重複禁止項目＿文字列.disabled = true;
-    //  event.record.重複禁止項目＿文字列.value = `${dateId} - ${productType} - ${numberManage}`;
     const dateGet = event.record.日付.value;
     console.log(`dateGet`);
     console.log(dateGet);
@@ -50,9 +48,6 @@
         event.record.重複禁止項目_文字列.value = `${dateId} - ${productType[3]} - ${numberManage}`;
         break;
     }
-    // event.record.重複禁止項目＿文字列.disabled =true; // prohibit the duplicate
-    // event.record.重複禁止項目＿文字列.value = `${dateId} - ${productType} - ${numberManage}`;
-
     return event;
   });
 })();
