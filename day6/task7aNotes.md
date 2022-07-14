@@ -4,17 +4,17 @@
 
 * keyword - (const)constant .
 
-* create variable(kEvent) and put the events of three process (日付、サイボウズ製品、管理番号)
+* declare variable(kEvent) and put the events of three process (日付、サイボウズ製品、管理番号)
 
 ## Create event 
 
-* in event, Use the variable (kEvent) to make it easier to read
-
+* create event with variable(kEvent)
+  
 * check the process is going well with console.log
 
 ## get the values from 日付 using date-fns library
 
-* create a variable(dateGet) to get value from 日付
+* declare a variable(dateGet) to get value from 日付
 
 * check the dateGet with console.log
 
@@ -26,9 +26,13 @@
 
 ## get the values from サイボウズ製品 using Array and Switch statement
 
-* create a variable to get values from サイボウズ製品
+* declare a variable(productTitle) to get values from サイボウズ製品
 
-* create array for the values 
+* create array(productType) for the values 
 
-* use switch statement to get the values
+* use switch statement to get the values from productTitle
+
+## prohibit the duplication in 重複禁止項目＿文字列
+
+
 
