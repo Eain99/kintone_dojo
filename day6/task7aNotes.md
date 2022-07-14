@@ -1,4 +1,12 @@
-# Steps
+# Steps- [Steps](#steps)
+
+- [Steps- Steps](#steps--steps)
+  - [Create variable for events](#create-variable-for-events)
+  - [Create event](#create-event)
+  - [get the values from 日付 using date-fns library](#get-the-values-from-日付-using-date-fns-library)
+  - [get the values from 管理番号](#get-the-values-from-管理番号)
+  - [get the values from サイボウズ製品 using Array and Switch statement](#get-the-values-from-サイボウズ製品-using-array-and-switch-statement)
+  - [from saving the record if the "ID" has a duplicate](#from-saving-the-record-if-the-id-has-a-duplicate)
 
 ## Create variable for events 
 
@@ -32,7 +40,7 @@
 
 * use switch statement to get the values from productTitle
 
-## prohibit the duplication in 重複禁止項目＿文字列
+## from saving the record if the "ID" has a duplicate
 
 
 
