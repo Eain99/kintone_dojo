@@ -36,16 +36,16 @@
 
     switch (productTitle) {
       case 'kintone':
-        event.record.重複禁止項目_文字列.value = `${dateId} - ${productType[0]} - ${numberManage}`;
+        event.record.重複禁止項目_文字列.value = `${dateId}-${productType[0]}-${numberManage}`;
         break;
       case 'Garoon':
-        event.record.重複禁止項目_文字列.value = `${dateId} - ${productType[1]} - ${numberManage}`;
+        event.record.重複禁止項目_文字列.value = `${dateId}-${productType[1]}-${numberManage}`;
         break;
       case 'サイボウズOffice':
-        event.record.重複禁止項目_文字列.value = `${dateId} - ${productType[2]} - ${numberManage}`;
+        event.record.重複禁止項目_文字列.value = `${dateId}-${productType[2]}-${numberManage}`;
         break;
       case 'Mailwise':
-        event.record.重複禁止項目_文字列.value = `${dateId} - ${productType[3]} - ${numberManage}`;
+        event.record.重複禁止項目_文字列.value = `${dateId}-${productType[3]}-${numberManage}`;
         break;
     }
     return event;
