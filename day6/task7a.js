@@ -32,6 +32,7 @@
     productType[1] = "GR";
     productType[2] = "OF";
     productType[3] = "MW";
+
     console.log(`productType`);
     console.log(productType);
 
@@ -49,7 +50,7 @@
         event.record.重複禁止項目_文字列.value = `${dateId} - ${productType[3]} - ${numberManage}`;
         break;
 
-        const duplicate = event.record.重複禁止項目＿文字列.value;
+        // const duplicate = event.record.重複禁止項目＿文字列.value;
         console.log(`duplicate`);
         console.log(duplicate);
     }
