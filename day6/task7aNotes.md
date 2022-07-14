@@ -1,4 +1,4 @@
-# Steps- [Steps](#steps)
+# Task 7 Steps
 
 - [Steps- Steps](#steps--steps)
   - [Create variable for events](#create-variable-for-events)
