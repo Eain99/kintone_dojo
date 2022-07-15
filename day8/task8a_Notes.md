@@ -13,9 +13,9 @@
 * Use the [Task_08_kintoneAPI課題用アプリ.zip](Task_08_kintoneAPI課題用アプリ.zip) to build a Kintone App
   * Duplicate the App from the Task 06
 * Automatically populate the record's sub-table for each Action5 options (6x)
-  * i.e., go through the Action5 dropdown, grab the options, and generate a sub-table row for each option
-* Do not hard-code the options as the dropdown field's value may change in the future
-* Generate the sub-table rows in the order of the dropdown options
+  * i.e., go through the Action5 drop-down, grab the options, and generate a sub-table row for each option
+* Do not hard-code the options as the drop-down field's value may change in the future
+* Generate the sub-table rows in the order of the drop-down options
 
 Screenshot of the Customization
 
