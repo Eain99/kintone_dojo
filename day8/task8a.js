@@ -1,15 +1,15 @@
 (() => {
   'use strict';
-  kintone.events.on('app.record.create.show', (event) => {
 
+  function autoSubTable(event) {
     console.log(event);
 
     const params = {
       app: kintone.app.getId(),
     };
-    kintone.api(kintone.api.url('/k/v1/app/form/fields.json,true'), 'GET', params) 
 
-  });
+    return kintone.api(kintone.api.url('/k/v1/app/form/fields.json,true'), 'GET', params);
+  }
 
-
+  kintone.events.on('app.record.create.show', autoSubTable);
 })();
