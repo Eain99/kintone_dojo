@@ -16,4 +16,7 @@
 
 ## Task in details
 
-* Reuse the 
+* Create Action5+1(2) app
+* Create event (create.show)
+* As it is to get data from app setting, we will use the method "GET" and URL "/k/v1/app/form/fields.json"
+* Declare request parameter(params) with app id with kintone.app.getId(). reference : [アプリID取得-cybozu developer network](https://developer.cybozu.io/hc/ja/articles/202166300-%E3%82%A2%E3%83%97%E3%83%AAID%E5%8F%96%E5%BE%97)
