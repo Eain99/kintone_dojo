@@ -1,8 +1,7 @@
 (() => {
   'use strict';
   kintone.events.on('app.record.create.show', (event) => {
-    console.log(event);
-
+  
     const newArray = [];// create new array for Table.value
 
     const action5 = ['あくなき探求', // create array for Action5 values
