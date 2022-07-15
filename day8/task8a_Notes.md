@@ -18,8 +18,7 @@
 * Generate the sub-table rows in the order of the drop-down options
 
 Screenshot of the Customization
-
-![task_08_goal.png](task_08_goal.png)
+* ![task_08_goal.png](task_08_goal.png)
 
 ## Task steps
 
