@@ -8,13 +8,20 @@
 * 使⽤するアプリはJSAPIと同じもの
 * アプリ再利⽤で動作確認をすること
 
-## Task steps
+## Task description
 
-* Reuse the app which was used in task6
-* Last time, Action5 values were decided automatically but this time, we want to be able to set with the value obtained from the application settings
-* The values set in the dropdown should be displayed in the correct order.
+* Use the [Task_08_kintoneAPI課題用アプリ.zip](Task_08_kintoneAPI課題用アプリ.zip) to build a Kintone App
+  * Duplicate the App from the Task 06
+* Automatically populate the record's sub-table for each Action5 options (6x)
+  * i.e., go through the Action5 dropdown, grab the options, and generate a sub-table row for each option
+* Do not hard-code the options as the dropdown field's value may change in the future
+* Generate the sub-table rows in the order of the dropdown options
+
+Screenshot of the Customization
 
 ## Task in details
+![task_08_goal.png](task_08_goal.png)
+
 
 * Create Action5+1(2) app
 * Create event (create.show)
