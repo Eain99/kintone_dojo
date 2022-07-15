@@ -35,3 +35,6 @@ Screenshot of the Customization
 1. Populate the drop-down field in the sub-table with each of the Action5 options (だし)
 1. Save the record?
 
+## References / 参考
+* [【公式】タイムカード（2017.4.11～） - Records](https://bozuman.cybozu.com/k/24590/) App's `不足営業日を一括入力`
+* [Autofill Data - KDP tutorial](https://kintone.dev/en/tutorials/autofill-data/)
