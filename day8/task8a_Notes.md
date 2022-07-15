@@ -38,3 +38,4 @@ Screenshot of the Customization
 ## References / 参考
 * [【公式】タイムカード（2017.4.11～） - Records](https://bozuman.cybozu.com/k/24590/) App's `不足営業日を一括入力`
 * [Autofill Data - KDP tutorial](https://kintone.dev/en/tutorials/autofill-data/)
+* [Show and Hide Fields Using Check boxes - Kintone Developer Program](https://kintone.dev/en/tutorials/show-hide-or-restrict-fields/show-and-hide-fields-using-checkboxes/)
