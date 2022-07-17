@@ -1,15 +1,23 @@
 (() => {
   'use strict';
+kintone.events.on('app.record.create.show',(event)=>{
+console.log(event);
+ const params = {
+ app:kintone.app.getId(),// reference:https://developer.cybozu.io/hc/ja/articles/202166300
+ };
 
-  function autoSubTable(event) {
-    console.log(event);
+ return kintone.api(kintone.api.url('/k/v1/app/form/fields.json',true),'GET',params).then((resp) =>{
 
-    const params = {
-      app: kintone.app.getId(),
-    };
+ const action5Options=resp.properties.Table.fields.Action5.options;
 
-    return kintone.api(kintone.api.url('/k/v1/app/form/fields.json,true'), 'GET', params);
-  }
+ const action5Array = [];
+ Object.keys(action5Options).forEach((values)=>{
+    action5Array[action5Options[values.index]] = values
+    console.log(values);
+ });
 
-  kintone.events.on('app.record.create.show', autoSubTable);
+ const tableValues = event.record.Table.value;
+
+ });
+});
 })();
