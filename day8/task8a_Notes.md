@@ -35,6 +35,20 @@ Screenshot of the Customization
 1. Populate the drop-down field in the sub-table with each of the Action5 options (だし)
 1. Save the record?
 
+## Task Steps(Updated)
+
+* Duplicate `Action5+1` App (used in Task 06)
+* Set the code trigger to [app.record.create.show](https://kintone.dev/en/docs/kintone/js-api/events/record-create-event/#onload-event-desktop)
+* Use [Get Form Fields](https://kintone.dev/en/docs/kintone/rest-api/apps/get-form-fields/) REST API to get all fields from the App
+* Create "action5Options" to get the options of Action5
+* Create new Array "action5Array"
+* Loop the values inside action5Options using forEach statement
+* Compress the value contained in Action5Array with DropDown and push it.
+* Create newArray to get values from action5Array
+* Use forEach statement to loop inside action5Array
+  * create new object "template" and put the values in it
+* put the values from template inside newArray
+
 ## References / 参考
 
 * [【公式】タイムカード（2017.4.11～） - Records](https://bozuman.cybozu.com/k/24590/) App's `不足営業日を一括入力`
