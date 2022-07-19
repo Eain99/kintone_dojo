@@ -8,16 +8,16 @@ console.log(event);
 
  return kintone.api(kintone.api.url('/k/v1/app/form/fields.json',true),'GET',params).then((resp) =>{
 
+  //action5のoptionsを出す
  const action5Options=resp.properties.Table.fields.Action5.options;
 
  const action5Array = [];
  Object.keys(action5Options).forEach((values)=>{
-    action5Array[action5Options[values.index]] = values
-    console.log(values);
+    action5Array[action5Options[values].index] = values
+  console.log(action5Array);
  });
-
- const tableValues = event.record.Table.value;
-
+// Action5Arrayに入っている値をDropDownでcompressしてPushする
+//event.record.Table.value?
  });
 });
 })();
