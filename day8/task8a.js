@@ -1,7 +1,6 @@
 (() => {
   'use strict';
   kintone.events.on('app.record.create.show', (event) => {
-    console.log(event);
     const params = {
       app: kintone.app.getId(),// reference:https://developer.cybozu.io/hc/ja/articles/202166300
     };
