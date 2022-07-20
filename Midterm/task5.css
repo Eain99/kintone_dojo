@@ -1,0 +1,22 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+header {
+  background-color: #1aaedb;
+  border-bottom: #ead963 6px solid;
+}
+
+
+table {
+  height: auto;
+  text-align: center;
+  margin: auto;
+  color: #050505;
+}
+
+th,td{
+  border:#1aaedb 2px;
+  padding: 2rem;
+}
