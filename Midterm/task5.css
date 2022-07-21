@@ -4,8 +4,9 @@ body {
   margin: 0;
 }
 header {
-  background-color: #1aaedb;
+  background-color: #f5f5f5;
   border-bottom: #ead963 6px solid;
+  text-align: center;
 }
 
 
@@ -13,10 +14,25 @@ table {
   height: auto;
   text-align: center;
   margin: auto;
-  color: #050505;
+  color: #000000;
+  border: 1px solid;
 }
 
 th,td{
-  border:#1aaedb 2px;
-  padding: 2rem;
+  border:2px solid;
+  color: #000000;
+  height: auto;
+  width: 10%;
+}
+
+.ir{
+  background-color:cyan;
+}
+
+.product{
+  background-color:pink;
+}
+
+.company{
+  background-color: rgb(255, 202, 166);
 }
