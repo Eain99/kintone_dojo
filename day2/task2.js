@@ -13,12 +13,9 @@ const fileManage =
 const file = Object.keys(fileManage);
 
 file.forEach((fileId) => {
-  // console.log(fileId); // Expected f001,f002,f003
-
   const innerLoop = Object.keys(fileManage[fileId]);
-
   innerLoop.forEach((fileProperty) => { // loops through files
-    // console.log(fileId + '-' + fileProperty);
+
 
     // Output the file permission settings to the 全てのフォルダとアクセス権を表示 table
     document.getElementById(fileId + '-' + fileProperty).textContent = fileManage[fileId][fileProperty];
@@ -27,9 +24,9 @@ file.forEach((fileId) => {
     if (fileManage[fileId][fileProperty] === "Everyone") {
       console.log(fileManage[fileId].folderName);
       //document.getElementById(fileProperty).textContent = fileManage[fileId][fileProperty].folderName;
-     
+
     }
-    
+
   })
 
 });
