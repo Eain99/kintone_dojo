@@ -2,7 +2,7 @@
   'use strict';
 
   kintone.events.on(['app.record.create.submit', 'app.record.edit.submit'], (event) => {
-    console.log(event);
+   
 
     const recordValue = event.record.重複禁止項目.value;
     const query = '重複禁止項目 = "' + recordValue + '"';
