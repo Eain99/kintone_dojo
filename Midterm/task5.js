@@ -7,7 +7,6 @@
     }
   })
     .then((resp) => {
-      console.log(resp);
       const table = document.getElementById('CybozuPage')
 
       resp.data.forEach((key) => {
