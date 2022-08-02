@@ -10,28 +10,16 @@ const fileManage =
 
 // Task2-2 オブジェクトに格納されている値を全てブラウザに表⽰する
 // Task2-2: Output the fileManage object in HTML using table's id
-// const file = Object.keys(fileManage);
-
 Object.keys(fileManage).forEach((fileId) => {
-
-  // const innerLoop = Object.keys(fileManage[fileId]);
   Object.keys(fileManage[fileId]).forEach((fileProperty) => {// loops through files
-
-
     // Output the file permission settings to the 全てのフォルダとアクセス権を表示 table
     document.getElementById(fileId + '-' + fileProperty).textContent = fileManage[fileId][fileProperty];
-
-    // find the files with the view auth 'Everyone'
-
   });
-  if (fileManage[fileId].viewAuth === "Everyone") {
-    console.log(fileManage[fileId].folderName);
 
+  if (fileManage[fileId].viewAuth === "Everyone") {
     const newList = document.createElement("li");
     newList.textContent = fileManage[fileId].folderName;
     document.getElementById("list").appendChild(newList);
-
-    //document.getElementById(fileProperty).textContent = fileManage[fileId][fileProperty].folderName;
   }
 
 });
