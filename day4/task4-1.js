@@ -5,7 +5,6 @@ const checkbox = document.getElementsByClassName('chk');
 
 // secureOptionにチェックを入れた時
 checkbox[0].onclick = () => {
-
   if (checkbox[0].checked) {
     standardPrice += Number(checkbox[0].value) * 5;
   }
@@ -16,7 +15,6 @@ checkbox[0].onclick = () => {
 }
 //diskExpansionにチェックを入れたとき
 checkbox[1].onclick = () => {
-
   if (checkbox[1].checked) {
     standardPrice += Number(checkbox[1].value);
   }
