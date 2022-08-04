@@ -1,51 +1,29 @@
 'use strict';
-
+let standardPrice = 3900;
 const price = document.getElementById('price');
+const checkbox = document.getElementsByClassName('chk');
+console.log(checkbox);
+
+// secureOptionにチェックを入れた時
+checkbox[0].onclick = () => {
+
 // const secureOption = document.getElementsByClassName('chk')[0].checked;
 // const diskExpansion= document.getElementsByClassName('chk')[1].checked;
 
-// secureOptionにチェックを入れた時
-document.getElementsByClassName('chk')[0].onclick = () => {
-
-const secureOption = document.getElementsByClassName('chk')[0].checked;
-const diskExpansion= document.getElementsByClassName('chk')[1].checked;
-
-console.log(secureOption);
-if(secureOption.checked && diskExpansion) {
-standardPrice = 6150;
-  price.innerText = standardPrice;
-}else if(secureOption && !diskExpansion){
-standardPrice = 5150;
-  price.innerText = standardPrice;
-}else if(!secureOption && diskExpansion){
-standardPrice = 4900;
-  price.innerText = standardPrice;
-}else if (!secureOption && !diskExpansion){
-standardPrice = 3900;
-  price.innerText = standardPrice;
+if(checkbox[0].checked){
+  price.innerText=standardPrice+Number(checkbox[0].value*5);
 }
 
+}
 //diskExpansionにチェックを入れたとき
-document.getElementsByClassName('chk')[1].onclick= () => {
+checkbox[1].onclick= () => {
 
-  const secureOption1 = document.getElementsByClassName('chk')[0].checked;
-  const diskExpansion1 = document.getElementsByClassName('chk')[1].checked;
-
-  if(secureOption1 && diskExpansion1) {
-  standardPrice =6150;
-    price.innerText = standardPrice;
-  } else if (secureOption1 && !diskExpansion1){
-  standardPrice= 5150;
-    price.innerText = standardPrice;
-  }else if(!secureOption1 && diskExpansion1){
-  standardPrice= 4900;
-    price.innerText = standardPrice;
-  }else if (!secureOption1 && !diskExpansion1){
-  standardPrice= 3900;
-    price.innerText = standardPrice;
-  }
+if(checkbox[1].checked){
+  price.innerText=standardPrice+Number(checkbox[1].value);
+}
+ 
 } // end of disExpansion process
-}// end of secureOption process
+// end of secureOption process
 
 // const standardPrice = 3900;
 // const secureOption = 1250;
