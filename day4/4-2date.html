@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dojo課題</title>
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+header {
+  background-color: #1aaedb;
+  border-bottom: #ead963 6px solid;
+}
+.container {
+  padding: 16px;
+  padding-left: 120px;
+}
+header h1,
+header h2 {
+  margin: 0;
+  color: #fff;
+  line-height: 1;
+}
+header h1 {
+  padding: 30px 0 5px 0;
+  font-size: 24px;
+  border-bottom: 1px dotted #fff;
+  font-weight: 500;
+}
+header h2 {
+  padding: 6px 0 0 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+</style>
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Kintone dojo</h1>
+    <h2>JavaScript課題①</h2>
+  </div>
+</header>
+<main class="container">
+<p>現在時刻: <div id="time"></div></p>
+</main>
+<script>
+  // ここに処理を追記
+  setInterval(() => {
+
+    const today= new Date();
+    const year = today.getFullYear();
+    const month=today.getMonth()+1;
+    const date = today.getDate();
+    const day=today.getDay();
+    const weekDay =['Mon','Tue','Wed','Thu','fri'];
+    const hour=today.getHours();
+    const minutes=today.getMinutes();
+    const seconds=today.getSeconds();
+  
+    const show =`${today}${year} 年${month}月 ${date}日${weekDay[day]} ${hour} ${minutes} ${seconds}`;
+    document.getElementById('time').textContent=show;
+  },1000);
+
+
+const today2 =  dayjs();
+const format= today2.format('YYYY-MM-DD HH:mm:ss');
+console.log(format);
+ 
+ 
+  </script>
+</body>
+</html>
